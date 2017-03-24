@@ -1,0 +1,341 @@
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+        font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#occupations {
+
+
+}
+
+
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Side Menu */
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    width: 270px;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #7cb65c;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    overflow:hidden;
+}
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 260px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.2);
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 55px;
+    font-size: 18px;
+    line-height: 55px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #ffffff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #ffffff;
+    background: none;
+}
+
+#menu-toggle {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#sidebar-wrapper.active {
+    left: 250px;
+    width: 250px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+
+.toggle {
+    margin: 5px 5px 0 0;
+}
+
+/* Header */
+/* BG-main */
+.header {
+
+    display: table;
+    position: absolute;
+    overflow:hidden;
+    width: 100%;
+    height: 100%;
+    background: #d6d6d6 no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.head {
+
+    top: -100%;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: #d6d6d6 no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    overflow: auto;
+}
+
+.footer {
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    margin: 0;
+    background-color: #7cb65c;
+    height: 80px;/* or however high you would like */
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+
+/*Canvas*/
+
+
+#canvas {
+    display:none;
+	height: 400px;
+	left: 40%;
+	margin: -150px 0 0 -300px;
+	position: absolute;
+	top: 40%;
+	width: 900px;
+}
+
+
+#holder {
+	height: 480px;
+	left: 50%;
+	margin: -240px 0 0 -320px;
+	position: absolute;
+	top: 50%;
+	width: 640px;
+}
+
+#copy {
+	bottom: 0;
+	font: 300 .7em "Helvetica Neue", Helvetica, "Arial Unicode MS", Arial,
+		sans-serif;
+	position: absolute;
+	right: 1em;
+	text-align: right;
+}
+
+#copy a {
+	color: #fff;
+}
+
+#canvas {
+	height: 400px;
+	left: 30%;
+	/*margin: -150px 0 0 -300px; - shouldn't need*/
+	position: absolute;
+	top: 40%;
+	width: 60%;
+}
+
+#paper {
+	height: 80%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 400px;
+}
+
+.region-desc {
+    text-align: right;
+	display: none;
+	height: 138%;
+	overflow: hidden;
+	position: absolute;
+	left: 65%;
+	top: -11%;
+  width: 550px;
+  max-width: 550px;
+    background: #7cb65c;
+
+}
+
+
+.region-desc svg {
+  font: 9px sans-serif;
+}
+
+.region-row {
+  text-align: right;
+	display: none;
+	height: 5%;
+	overflow: hidden;
+	position: absolute;
+	left: 0%;
+	bottom: 0;
+	width: 100%;
+    background: #5e8947;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.logo{
+
+    left: 11.5%;
+    top: 20%;
+    height: 63%;
+    width: 27.5%;
+    position: absolute;
+
+}
+
+.visitx{
+
+    position: absolute;
+    top: 35%;
+    left: 36%;
+    font-size: 30px;
+    font-color: 7cb65c;
+
+}
+
+/* Micro reset */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: Helvetica, Arial, sans-serif; }
+
+
+.footer {
+position:fixed;
+bottom:0;
+width: 100% ;
+height: 5% ;
+background-color: #7cb65c ;
+}
+
+.headz {
+position:fixed;
+top:0;
+width: 100% ;
+height: 5% ;
+background-color: #676767 ;
+}
+
+#Region-pie {
+    position:absolute;
+    top: -43px;
+    left: -46px;
+}
+
+.Region-scale{
+
+
+}
